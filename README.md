@@ -1,35 +1,39 @@
-# JEE Lab 1
+# Compte rendu — JEE Lab 1
 
-Java JPA/Hibernate lab that stores `Produit` entities in an in-memory H2 database and shows the data through the H2 web console.
+Ce projet illustre une petite application Java JPA/Hibernate qui enregistre des `Produit` dans une base H2 en mémoire et affiche le résultat dans la console web H2.
 
-## What it does
+## Objectif du TP
 
-- Connects to `jdbc:h2:mem:testdb`
-- Creates the `PRODUIT` table
-- Inserts three sample rows:
+L'objectif était de mettre en place une persistance simple avec JPA/Hibernate, puis de vérifier que les données sont bien créées et visibles dans H2.
+
+## Réalisation
+
+- Connexion à `jdbc:h2:mem:testdb`
+- Création de la table `PRODUIT`
+- Insertion de trois produits de démonstration :
   - Laptop — `999.99`
   - Smartphone — `499.99`
   - Tablette — `299.99`
-- Opens the H2 console on `http://localhost:8082`
+- Ouverture de la console H2 sur `http://localhost:8082`
 
-## Expected result
+## Résultat obtenu
 
-Login screen:
+Écran de connexion à H2 :
 
-![H2 login](assets/h2-login.png)
+![Écran de connexion H2](assets/h2-login.png)
 
-Query result showing the `PRODUIT` table:
+Résultat de la requête sur la table `PRODUIT` :
 
-![Query result](assets/console-result.png)
+![Résultat de la requête](assets/console-result.png)
 
-H2 help page:
+Page d'aide de H2 :
 
-![H2 help](assets/h2-help.png)
+![Page d'aide H2](assets/h2-help.png)
 
-## Run it
+## Exécution
 
 ```bash
 mvn exec:java
 ```
 
-If you prefer, you can also build the project with Maven first and then run the main class from your IDE.
+Le projet peut aussi être lancé depuis l'IDE en exécutant la classe principale.
