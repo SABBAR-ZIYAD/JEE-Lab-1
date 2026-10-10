@@ -30,10 +30,4 @@ Page d'aide de H2 :
 
 ![Page d'aide H2](assets/h2-help.png)
 
-## Exécution
 
-```bash
-mvn exec:java
-```
-
-Le projet peut aussi être lancé depuis l'IDE en exécutant la classe principale.
