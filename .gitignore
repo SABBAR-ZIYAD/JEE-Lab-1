@@ -1,0 +1,14 @@
+# Maven build output
+/target/
+
+# Local editor files
+/.idea/
+*.iml
+*.iws
+*.ipr
+/out/
+/.vscode/
+
+# Operating system files
+.DS_Store
+Thumbs.db
